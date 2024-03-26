@@ -14,4 +14,9 @@ RUN pip install /code
 
 COPY ./controller /code/controller
 
+# Fix root user problem
+RUN useradd -m user && chown -R user /code
+# Switch to the non-root user
+USER user
+
 CMD ["uvicorn", "controller.controller:app", "--host", "0.0.0.0", "--port", "80"]

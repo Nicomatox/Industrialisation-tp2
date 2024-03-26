@@ -26,3 +26,15 @@ Dans notre exemple, "with" est utilisé pour précisier la version de python pou
 
 Il sert à determiner si un projet réponds aux critères de qualités définis (les 4 critères ci-dessus), avant d'être considéré comme prêt pour la production.
 
+# Quelle est la différence entre les sections New code et Overall Code dans l’onglet Summary ?
+
+New code fait référence au nouveau code ajouté, tandis que overcall prends compte de tout le code (ancien et nouveau)
+
+# Y a-t-il des Code Smells ? Si oui, combien et pour quelle(s) raisons(s)?
+
+Oui il y en a 3, car il a y des optimisations de code à faire à certains endroits.
+
+# Y a-t-il des Security Hotspots ? Si oui, combien et pour quelle(s) raison(s) ?
+
+Oui 1, car l'image python tourne avec l'utilisateur root par défaut, ce qui peut poser des problèmes de sécurité.
+
