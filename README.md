@@ -15,3 +15,14 @@ Les éléments "uses" et "run". "uses" spécifie une action réutilisable à exe
 Le mot-clé "with" permets de passer des paramètres ou arguments supplémentaires à une action "uses".
 Dans notre exemple, "with" est utilisé pour précisier la version de python pour le "uses" "uses: actions/setup-python@v3".
 
+# Sur l’onglet Summary d’une analyse de code, SonarCloud fournit 4 indicateurs. Quels sont-ils et quelles sont leurs utilités ?
+
+- Reliability : les bugs potentiels
+- Security : vulnérabilités qui pourraient être exploitées par des hackers
+- Maintainability : code qui pourrait être difficile à maintenir
+- Security Review : code sensible qui nécessite une review manuelle
+
+# À quoi sert l’indicateur Quality Gate ?
+
+Il sert à determiner si un projet réponds aux critères de qualités définis (les 4 critères ci-dessus), avant d'être considéré comme prêt pour la production.
+
